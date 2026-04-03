@@ -5,21 +5,21 @@
 class Hmm < Formula
   desc "A terminal UI for viewing CSV and Parquet files"
   homepage "https://github.com/suntianxun/hmm"
-  version "0.1.4"
+  version "1.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/suntianxun/hmm/releases/download/v0.1.4/hmm_0.1.4_darwin_amd64.tar.gz"
-      sha256 "7a497035f79267c6319d92622d3eda25302892b149c391adcc6d05691f0b8352"
+      url "https://github.com/suntianxun/hmm/releases/download/v1.0.0/hmm_1.0.0_darwin_amd64.tar.gz"
+      sha256 "69b2c1e3d314f4a909871b4d7b91cfcbacf77acba7d60b5b79488d00a81e10ec"
 
       define_method(:install) do
         bin.install "hmm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/suntianxun/hmm/releases/download/v0.1.4/hmm_0.1.4_darwin_arm64.tar.gz"
-      sha256 "f004239247cefcaa5d16be6b0bd7bf11778d81558ae3c35b2e26fb14a8a99b09"
+      url "https://github.com/suntianxun/hmm/releases/download/v1.0.0/hmm_1.0.0_darwin_arm64.tar.gz"
+      sha256 "dc905c82dac467c37aa62b7c68050feaf9165027cb9ed9e3c7deb1d0e0e9c889"
 
       define_method(:install) do
         bin.install "hmm"
@@ -29,15 +29,15 @@ class Hmm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/suntianxun/hmm/releases/download/v0.1.4/hmm_0.1.4_linux_amd64.tar.gz"
-      sha256 "899474a0cea8f93f9ce4142aea32b6c1db6b2ae7f3e9d4dc6943462dc53aadb7"
+      url "https://github.com/suntianxun/hmm/releases/download/v1.0.0/hmm_1.0.0_linux_amd64.tar.gz"
+      sha256 "ce8605401befa3b8cab643c18853939c1e021ebbb70762576724c57b90665a9d"
       define_method(:install) do
         bin.install "hmm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/suntianxun/hmm/releases/download/v0.1.4/hmm_0.1.4_linux_arm64.tar.gz"
-      sha256 "f1310089094b60acefd148f03b4138e7ddd4533c9cf3c39976415a5e3f612abb"
+      url "https://github.com/suntianxun/hmm/releases/download/v1.0.0/hmm_1.0.0_linux_arm64.tar.gz"
+      sha256 "23b540c6079a9ccd300ad3bc348ad8da1b7381dae86289e1b885b46b70c69e3c"
       define_method(:install) do
         bin.install "hmm"
       end
