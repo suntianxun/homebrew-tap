@@ -5,21 +5,21 @@
 class Aha < Formula
   desc "A TUI for showing dependencies of a Python project"
   homepage "https://github.com/suntianxun/aha"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/suntianxun/aha/releases/download/v0.1.0/aha_0.1.0_darwin_amd64.tar.gz"
-      sha256 "5319dd8fd48a7fe3c82ccae66fbce9e699321e6b2abf6f7470de6125a068b4e9"
+      url "https://github.com/suntianxun/aha/releases/download/v0.2.0/aha_0.2.0_darwin_amd64.tar.gz"
+      sha256 "35c1a3f4260a288ebca6fec6c93e9f24834f3abc45eda349fdc1de188af001df"
 
       define_method(:install) do
         bin.install "aha"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/suntianxun/aha/releases/download/v0.1.0/aha_0.1.0_darwin_arm64.tar.gz"
-      sha256 "808916fe6a36985e70319b96c815a0653ff8c8ffe3236c0e45c78d60f87d594a"
+      url "https://github.com/suntianxun/aha/releases/download/v0.2.0/aha_0.2.0_darwin_arm64.tar.gz"
+      sha256 "27d269fef0fbf028f1f5e0eb8ce4142269cab824f1ac06e1b9e15488362104d9"
 
       define_method(:install) do
         bin.install "aha"
@@ -29,15 +29,15 @@ class Aha < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/suntianxun/aha/releases/download/v0.1.0/aha_0.1.0_linux_amd64.tar.gz"
-      sha256 "07e05d6e2ebe95424384e3a796fa6743c5621a6c63b03c748409a81247c73977"
+      url "https://github.com/suntianxun/aha/releases/download/v0.2.0/aha_0.2.0_linux_amd64.tar.gz"
+      sha256 "ab7373f1e1baa9c0dfedb732c788b79f9a7b2f78a6905c1cba34b8d49d9cbf10"
       define_method(:install) do
         bin.install "aha"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/suntianxun/aha/releases/download/v0.1.0/aha_0.1.0_linux_arm64.tar.gz"
-      sha256 "d197a85b1eab1aed6c4d002383db5df9bf3153ef9f78b610d93c6c1b16dd3d39"
+      url "https://github.com/suntianxun/aha/releases/download/v0.2.0/aha_0.2.0_linux_arm64.tar.gz"
+      sha256 "a4ed2561403270df91b044e8843628d678551db1d7692d7454a281cd39d1cf9c"
       define_method(:install) do
         bin.install "aha"
       end
