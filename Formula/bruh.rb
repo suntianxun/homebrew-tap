@@ -5,20 +5,20 @@
 class Bruh < Formula
   desc "A beautiful terminal user interface for Homebrew"
   homepage "https://github.com/suntianxun/bruh"
-  version "0.1.2"
+  version "0.1.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/suntianxun/bruh/releases/download/v0.1.2/bruh_0.1.2_darwin_amd64.tar.gz"
-      sha256 "16b913798a007d8f60e274d254f82a0cdf0c14908436ffc10e59b436337545e3"
+      url "https://github.com/suntianxun/bruh/releases/download/v0.1.3/bruh_0.1.3_darwin_amd64.tar.gz"
+      sha256 "6c01a0923f6833502c9fda3232c32ee5eacb1df69abdfe6607f5997069c22319"
 
       define_method(:install) do
         bin.install "bruh"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/suntianxun/bruh/releases/download/v0.1.2/bruh_0.1.2_darwin_arm64.tar.gz"
-      sha256 "3401be774c4f40c27e90de8cd80ea212b00ba2fee582ffa210e3adcdfc825236"
+      url "https://github.com/suntianxun/bruh/releases/download/v0.1.3/bruh_0.1.3_darwin_arm64.tar.gz"
+      sha256 "beba2ad383caa5e91f8ceb2e1c5d5ae60ba17faa68565db919c3bc1bd4701ab8"
 
       define_method(:install) do
         bin.install "bruh"
@@ -28,15 +28,15 @@ class Bruh < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/suntianxun/bruh/releases/download/v0.1.2/bruh_0.1.2_linux_amd64.tar.gz"
-      sha256 "b60f1e4f6064d20cac13653e9f32a5a7c099e8117c909c25fa7e7b9d8571c334"
+      url "https://github.com/suntianxun/bruh/releases/download/v0.1.3/bruh_0.1.3_linux_amd64.tar.gz"
+      sha256 "09164c482a97a2fee5c97b649b8f73bc898cc9f54caaf09d97a91414657589a0"
       define_method(:install) do
         bin.install "bruh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/suntianxun/bruh/releases/download/v0.1.2/bruh_0.1.2_linux_arm64.tar.gz"
-      sha256 "29f8ab19690d598e2b47f0651402dff909104fa5f62b0d0f6825a064d3f54d95"
+      url "https://github.com/suntianxun/bruh/releases/download/v0.1.3/bruh_0.1.3_linux_arm64.tar.gz"
+      sha256 "824b2c0f01462aab196d7e20dab176f5497a8632bcea93785896bd8ddcaf8f56"
       define_method(:install) do
         bin.install "bruh"
       end
